@@ -1,0 +1,86 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+
+body {
+  @apply bg-gray-50;
+}
+
+textarea{
+  @apply flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent;
+}
+
+.color{
+  @apply flex gap-2.5 items-center;
+
+  &--checked {
+    @apply border border-purple-600;
+  }
+
+  & * {
+    @apply rounded-full h-3 w-3 cursor-pointer;
+  }
+
+  .red {
+    @apply bg-red-300;
+  }
+
+  .blue{
+    @apply bg-blue-300;
+  }
+
+  .indigo{
+    @apply bg-indigo-300;
+  }
+
+  .green{
+    @apply bg-green-300;
+  }
+
+  .yellow{
+    @apply bg-yellow-300;
+  }
+
+  .none{
+    @apply bg-gray-300;
+  }
+
+}
+
+.red {
+  @apply bg-red-50;
+}
+
+.indigo{
+  @apply bg-indigo-50;
+}
+
+.green{
+  @apply bg-green-50;
+}
+
+.yellow{
+  @apply bg-yellow-50;
+}
+
+.none{
+  @apply bg-gray-50;
+}
+
+
+/* Rules for sizing the icon. */
+.material-icons-round.md-18 { font-size: 18px; }
+.material-icons-round.md-24 { font-size: 24px; }
+.material-icons-round.md-36 { font-size: 36px; }
+.material-icons-round.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons-round.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons-round.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons-round.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons-round.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
